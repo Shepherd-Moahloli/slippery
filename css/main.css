@@ -4,4 +4,60 @@ body {
     font-size: 1rem;
     font-family: Helvetica, Arial, sans-serif;
     color: #000;
+    scroll-behavior: smooth;
 }
+
+
+nav {
+    background-color: #000;
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+
+nav a {
+    display: block;
+    padding: 3rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+main div {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-size: 10rem;
+    font-weight: bold;
+    color: #fff;
+
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+
+}
+
+main div.one {
+    background-color: rgb(80, 148, 216);
+}
+
+main div.two {
+    background-color: rgb(15, 114, 175);
+}
+
+main div.three {
+    background-color: rgb(40, 94, 128);
+} 
+
+main div.four {
+    background-color: rgb(28, 63, 85);
+} 
+
+main div.five {
+    background-color: rgb(22, 49, 66);
+} 
