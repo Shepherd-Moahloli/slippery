@@ -49,7 +49,18 @@ main div {
     scroll-snap-align: start;
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
+    animation: blink 0.3s infinite;
 
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
 }
 
 main div.one {
