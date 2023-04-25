@@ -1,7 +1,9 @@
 //https://picsum.photos/200
 //https://picsum.photos/v2/list?page=5&limit=12
 
-const page = 1;
+const page = Math.round(Math.random() * 50);
+
+console.log(page);
 
 const url = "https://picsum.photos/v2/list?limit=5&page=" + page;
 console.log(url);

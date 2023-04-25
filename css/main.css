@@ -9,7 +9,7 @@ body {
 
 
 nav {
-    background-color: #000;
+    background-color: rgb(26, 25, 25, 0.4);
     height: 10vh;
     display: flex;
     position: fixed;
