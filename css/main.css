@@ -30,9 +30,13 @@ main {
     scroll-behavior: smooth;
     width: 100vw;
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
+
+/* Always try to go minimal with your code, simplify the code*/
 
 main div {
     width:100vw;
