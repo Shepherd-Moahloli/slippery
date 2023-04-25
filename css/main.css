@@ -9,8 +9,8 @@ body {
 
 
 nav {
-    background-color: rgb(26, 25, 25, 0.4);
-    height: 10vh;
+    background-color: rgba(46, 41, 41, 0.4);
+    height: 8rem;
     display: flex;
     position: fixed;
     width: 100vw;
@@ -43,12 +43,12 @@ main div {
     display: flex;
     justify-content: center;
     place-items: center;
-    font-size: 10rem;
+    font-size: 5rem;
     font-weight: bold;
     color: #fff;
-
     background-repeat: no-repeat;
     background-size: cover;
+    
 
   /*  scroll-snap-align: start; These will help us with backgrounds
     scroll-behavior: smooth;
@@ -92,3 +92,39 @@ main div.four {
 main div.five {
     background-color: rgb(22, 49, 66);
 } 
+
+
+
+
+
+@media (min-width: 314px) and (max-width: 940px) {
+
+    nav {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        
+    }
+
+    nav a {
+        width: 30px;
+        padding: 1.8rem;
+        aspect-ratio: 1;
+        padding-top: 50px;
+
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main div.one, 
+    main div.two,
+    main div.three,
+    main div.four,
+    main div.five {
+        width: 100%;
+        font-size: 3rem;
+    }
+    
+}
