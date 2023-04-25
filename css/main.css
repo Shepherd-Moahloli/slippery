@@ -16,6 +16,7 @@ nav {
     width: 100vw;
     justify-content: space-between;
     font-size: 1.5rem;
+    z-index: 10;
 }
 
 
@@ -46,20 +47,29 @@ main div {
     font-weight: bold;
     color: #fff;
 
-    scroll-snap-align: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  /*  scroll-snap-align: start; These will help us with backgrounds
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
-    animation: blink 0.3s infinite;
-
+    background: linear-gradient(45deg, #000, #fff);
+    background-size: 100% 100%;
+    background-image: url('https://picsum.photos/v2/list?page=5&limit=12');
+*/
 }
 
 @keyframes blink {
     from, to {
-        opacity: 1;
+        /*filter: saturate(1);
+        background: linear-gradient(45deg, #00f, #f00);*/
+        background-size: 100% 100%;
     }
 
     50% {
-        opacity: 0.3;
+        
+        /*filter: saturate(0);*/
+        background-size: 800% 800%;
     }
 }
 
