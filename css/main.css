@@ -26,6 +26,13 @@ nav a {
     text-decoration: none;
 }
 
+main {
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 
 main div {
     width:100vw;
